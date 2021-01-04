@@ -1,6 +1,6 @@
 import numpy as np
 
-def Bias_Perceptron(arr_x):
+def AND(arr_x):
     weight = np.array([0.5, 0.5])
     bias = -0.7
     tmp = np.sum(weight*arr_x) + bias
@@ -12,9 +12,19 @@ def Bias_Perceptron(arr_x):
         return 0
     else:
         return 1
-
+    
+def NAND(arr_x):
+    weight = np.array([-0.5, -0.5])
+    bias = 0.7
+    tmp = np.sum(weight*arr_x) + bias
+    
+    if tmp <= 0:
+        return 0
+    else:
+        return 1
 
 if __name__ == "__main__":
     x = np.array([0, 1])
-    print(Bias_Perceptron(x))
+    print(AND(x))
+    print(NAND(x))
     
