@@ -1,16 +1,22 @@
-[using virtualenv] 0. pip install virtualenv
+# [for start]
 
-1. (command) virtualenv venv
-2. (command) . venv/scripts/activate
-   --- if you get a commandline like (venv)~, it's success.
+      [using virtualenv]
 
-[install development environments]
+(command) >> <code>pip install virtualenv</code><br>
+(command) >> <code> virtualenv venv</code><br>
+(command) >> <code> . venv/scripts/activate</code>
 
-1. pip install -r requirements.txt
+> if you get a commandline like (venv)~, it's success.
 
-[밑바닥부터 시작하는 딥러닝]
+<br>
+
+      [install development environments]
+
+(command) >> <code>pip install -r requirements.txt</code><br><br>
+
+# [밑바닥부터 시작하는 딥러닝]
 
 - Break Plan : 2021-01-04 ~
 
-2.  퍼셉트론
-    2-1. 간단한 퍼셉트론 (AND Gate : 2021-01-04)
+> [Ch.2] 퍼셉트론 <br><br>
+> (2-1) 간단한 퍼셉트론 (AND, OR, NAND) # 2021-01-04

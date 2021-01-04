@@ -22,9 +22,19 @@ def NAND(arr_x):
         return 0
     else:
         return 1
+    
+def OR(arr_x):
+    weight = np.array([0.5, 0.5])
+    bias = -0.2
+    tmp = np.sum(weight*arr_x) + bias
+    
+    if tmp <= 0:
+        return 0
+    else:
+        return 1
 
 if __name__ == "__main__":
     x = np.array([0, 1])
     print(AND(x))
     print(NAND(x))
-    
+    print(OR(x))
