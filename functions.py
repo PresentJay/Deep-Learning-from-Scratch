@@ -10,6 +10,12 @@ def sigmoid(x):
 def relu(x):
     return np.maximum(0, x)
 
-# 항등함수
 def identity_function(x):
     return x
+
+def softmax(x):
+    c = np.max(x)
+    exp_x = np.exp(x - c)
+    sum_exp_x = np.sum(exp_x)
+    return exp_x / sum_exp_x
+    
