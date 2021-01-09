@@ -21,7 +21,6 @@ __pycache__/
 *.so
 
 *.gz
-*.pkl
 
 # Distribution / packaging
 .Python
