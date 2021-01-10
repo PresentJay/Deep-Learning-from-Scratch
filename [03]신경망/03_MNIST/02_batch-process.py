@@ -1,6 +1,7 @@
 import sys, os, pickle
-from mnist import load_mnist
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__)))))
+DIR = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+sys.path.append(DIR)
+from Dataset.mnist import load_mnist
 from functions import *
 from PIL import Image
 
@@ -13,7 +14,7 @@ def get_data():
     return x_test, t_test
 
 def init_network():
-    with open(os.path.abspath(os.path.dirname(__file__)) + "/sample_weight.pkl", 'rb') as f:
+    with open(DIR + "/Dataset/sample_weight.pkl", 'rb') as f:
         network = pickle.load(f)
     return network
 
