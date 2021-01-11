@@ -3,7 +3,7 @@ DIR = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 sys.path.append(DIR)
 from functions import *
 
-# 편미분 : 변수가 여럿인 함수의 미분
+# 편미분 : 변수가 여럿인 함수의 미분 : 편미분용 함수를 더 만들어서 풀면 된다!
 
 def function(x):
     return x[0]**2 + x[1]**2
