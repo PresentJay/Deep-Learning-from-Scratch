@@ -39,4 +39,16 @@ def gradient_descent(f, init_x, lr=0.01, step_num=100):
 
 if __name__ == "__main__":
     init_x = np.array([-3.0, 4.0])
+    
+    # 실제 최소값은 0,0이고, 0,0에 가까운 결과를 냄!
     print(gradient_descent(function, init_x, 0.1, 100))
+    
+    # 학습률이 너무 작거나 커도 좋은 결과를 낼 수 없음
+    
+    # 학습률이 너무 작은 예
+    init_x = np.array([-3.0, 4.0])
+    print(gradient_descent(function, init_x, lr=1e-10, step_num=100))
+    
+    # 학습률이 너무 큰 예
+    init_x = np.array([-3.0, 4.0])
+    print(gradient_descent(function, init_x, lr=10.0, step_num=100))
